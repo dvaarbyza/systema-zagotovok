@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Marck+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=reviews-cut-green-1">
   </head>
   <body>
     <header class="topbar" aria-label="Основная навигация">
@@ -24,6 +24,7 @@
         <a href="#author">Хадиджа</a>
         <a href="#program">Программа</a>
         <a href="#materials">Материалы</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#tariffs">Тарифы</a>
       </nav>
     </header>
@@ -99,14 +100,18 @@
         <div class="intro-grid">
           <div class="intro-copy">
             <p>
-              Курс собран вокруг бытовой практики: какие продукты можно замораживать,
-              как их готовить, во что упаковывать, как подписывать и как потом
-              размораживать без потери вкуса и текстуры.
+              Это не набор разрозненных рецептов, а понятная система: что покупать,
+              как готовить продукты к хранению, во что упаковывать, как подписывать
+              и как потом размораживать без потери вкуса.
             </p>
             <p>
-              Материалы закрывают весь путь: от основ безопасности до готовых блюд,
-              бюджетного меню, детских заготовок и сбалансированных вариантов подачи.
+              Курс закрывает весь бытовой путь: от безопасности и порядка в морозилке
+              до готовых блюд, детских заготовок, бюджетного меню и быстрых ужинов.
             </p>
+            <a class="button ghost violet" href="#tariffs">
+              Выбрать формат
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
           <div class="benefits" aria-label="Преимущества">
             <article>
@@ -126,6 +131,13 @@
             </article>
           </div>
         </div>
+        <figure class="intro-showcase">
+          <img src="assets/why-course-system.png" alt="Организованные контейнеры с заготовками в морозилке">
+          <figcaption>
+            <span>Система вместо хаоса</span>
+            <p>Вы видите запасы, быстрее собираете еду и меньше тратите на случайные покупки.</p>
+          </figcaption>
+        </figure>
       </section>
 
       <section class="section author" id="author" aria-labelledby="author-title">
@@ -143,6 +155,9 @@
             </p>
           </div>
           <div class="author-card" aria-label="Фокус автора">
+            <div class="author-card-image">
+              <img src="assets/author-system.png" alt="Планер, заготовки и организованная домашняя система">
+            </div>
             <span>Опыт Хадиджи</span>
             <h3>Мастер заготовок и заморозок</h3>
             <ul>
@@ -509,6 +524,17 @@
           <p class="eyebrow">Что внутри</p>
           <h2 id="materials-title">Вся информация из курса собрана в удобную систему</h2>
         </div>
+        <div class="toolkit-feature">
+          <img src="assets/materials-system.png" alt="Карточки рецептов, чек-листы и заготовки для курса">
+          <div>
+            <span>Материалы курса</span>
+            <h3>Видео, памятки, рецепты и списки, которые можно сразу применять дома</h3>
+            <p>
+              Всё собрано так, чтобы не искать по разным местам: правила, сроки,
+              упаковка, заготовки по продуктам, готовые блюда и идеи меню.
+            </p>
+          </div>
+        </div>
         <div class="material-grid">
           <article class="material-card featured">
             <span>01</span>
@@ -561,6 +587,45 @@
         </div>
       </section>
 
+      <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <p class="eyebrow">Отзывы</p>
+          <h2 id="reviews-title">Сёстры уже внедряют систему и показывают результаты</h2>
+        </div>
+        <div class="reviews-shell">
+          <div class="reviews-copy">
+            <span>Живые отзывы</span>
+            <p>
+              В отзывах отмечают, что материалы понятные, продукты доступные,
+              а заготовки быстро становятся реальной помощью на кухне.
+            </p>
+            <div class="review-points" aria-label="Что чаще всего отмечают">
+              <p><b>15 минут</b><small>на суп из готовой базы</small></p>
+              <p><b>баночки</b><small>соусы, салаты, заправки и тушёнка</small></p>
+              <p><b>спокойствие</b><small>понятно, что готовить и где хранить</small></p>
+            </div>
+          </div>
+          <div class="review-gallery">
+            <figure class="review-proof">
+              <img src="assets/review-cut-1.png" alt="Отзыв участницы о подливе впрок">
+              <figcaption><b>Подлива впрок</b><span>готовая база для быстрых блюд</span></figcaption>
+            </figure>
+            <figure class="review-proof">
+              <img src="assets/review-cut-2.png" alt="Отзыв участницы о курсе и заготовках">
+              <figcaption><b>“Суп за 15 минут”</b><span>курс помогает сразу внедрять систему</span></figcaption>
+            </figure>
+            <figure class="review-proof">
+              <img src="assets/review-cut-3.png" alt="Отзыв участницы о готовом блюде из заготовок">
+              <figcaption><b>Сразу в блюдо</b><span>заготовки превращаются в ужин</span></figcaption>
+            </figure>
+            <figure class="review-proof">
+              <img src="assets/review-cut-4.png" alt="Отзыв участницы о готовом блюде из заготовок">
+              <figcaption><b>Вкусно и удобно</b><span>понятные рецепты на каждый день</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section class="section tariffs" id="tariffs" aria-labelledby="tariffs-title">
         <div class="section-heading">
           <p class="eyebrow">Тарифы</p>
@@ -568,7 +633,7 @@
         </div>
         <div class="tariff-grid">
           <article class="tariff-card">
-            <div class="tariff-image" aria-hidden="true"></div>
+            <div class="tariff-image tariff-image-self" aria-hidden="true"></div>
             <div class="tariff-body">
               <span class="tariff-kicker">Самостоятельно</span>
               <h3>Система заготовок</h3>
@@ -588,8 +653,8 @@
           </article>
 
           <article class="tariff-card featured">
-            <div class="tariff-badge">С обратной связью</div>
-            <div class="tariff-image" aria-hidden="true"></div>
+            <div class="tariff-badge">VIP сопровождение</div>
+            <div class="tariff-image tariff-image-vip" aria-hidden="true"></div>
             <div class="tariff-body">
               <span class="tariff-kicker">С сопровождением</span>
               <h3>Система заготовок с Хадиджей</h3>
