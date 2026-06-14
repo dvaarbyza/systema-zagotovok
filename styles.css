@@ -1191,12 +1191,11 @@ h3 {
 }
 
 .review-controls {
-  position: absolute;
   z-index: 4;
-  top: -74px;
-  right: 0;
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
+  margin: 0 0 18px;
 }
 
 .review-gallery {
