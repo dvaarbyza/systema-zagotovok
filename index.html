@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Marck+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=telegram-materials-6">
+    <link rel="stylesheet" href="styles.css?v=reviews-premium-1">
   </head>
   <body>
     <header class="topbar" aria-label="Основная навигация">
@@ -657,23 +657,41 @@
 
       <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
         <div class="section-heading reviews-heading">
-          <h2 id="reviews-title">Отзывы участниц</h2>
+          <p class="eyebrow">Что говорят участницы</p>
+          <h2 id="reviews-title">Отзывы учениц</h2>
+          <p class="reviews-lead">
+            Ученицы не просто смотрят уроки - они уже делают заготовки,
+            заполняют морозилку и освобождают себе время на каждый день.
+          </p>
         </div>
-        <div class="reviews-shell">
-          <div class="review-gallery">
-            <figure class="review-proof">
+        <div class="reviews-shell" data-carousel>
+          <div class="review-controls">
+            <button class="carousel-button" type="button" data-carousel-prev aria-label="Предыдущий отзыв">←</button>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="Следующий отзыв">→</button>
+          </div>
+          <div class="review-gallery" data-carousel-track tabindex="0" aria-label="Отзывы учениц">
+            <figure class="review-proof" data-carousel-slide>
               <img src="assets/review-cut-1.png" alt="Отзыв участницы о подливе впрок">
-              <figcaption><b>Подлива впрок</b><span>готовая база для быстрых блюд</span></figcaption>
+              <figcaption><b>Заготовки, которые всегда выручают</b><span>готовая база для быстрых блюд</span></figcaption>
             </figure>
-            <figure class="review-proof">
+            <figure class="review-proof" data-carousel-slide>
               <img src="assets/review-cut-2.png" alt="Отзыв участницы о курсе и заготовках">
-              <figcaption><b>“Суп за 15 минут”</b><span>курс помогает сразу внедрять систему</span></figcaption>
+              <figcaption><b>15 банок за неделю</b><span>курс помогает сразу внедрять систему</span></figcaption>
             </figure>
-            <figure class="review-proof">
+            <figure class="review-proof" data-carousel-slide>
               <img src="assets/review-cut-3.png" alt="Отзыв участницы о готовом блюде из заготовок">
-              <figcaption><b>Сразу в блюдо</b><span>заготовки превращаются в ужин</span></figcaption>
+              <figcaption><b>Суп за 15 минут</b><span>заготовки превращаются в ужин</span></figcaption>
+            </figure>
+            <figure class="review-proof" data-carousel-slide>
+              <img src="assets/review-cut-5.png?v=bg-clean-1" alt="Отзыв участницы о первой тушенке">
+              <figcaption><b>Первая тушенка</b><span>мясо стало мягким и готовым к обеду</span></figcaption>
+            </figure>
+            <figure class="review-proof" data-carousel-slide>
+              <img src="assets/review-cut-6.png?v=bg-clean-1" alt="Отзыв участницы о материалах курса">
+              <figcaption><b>Не пожалела, что приобрела курс</b><span>понятно, разнообразно и с обратной связью</span></figcaption>
             </figure>
           </div>
+          <div class="carousel-dots review-dots" data-carousel-dots aria-label="Переключатели отзывов"></div>
         </div>
       </section>
 
@@ -751,7 +769,7 @@
     <script>
       document.querySelectorAll("[data-carousel]").forEach((carousel) => {
         const track = carousel.querySelector("[data-carousel-track]");
-        const slides = Array.from(track.querySelectorAll(".home-slide"));
+        const slides = Array.from(track.querySelectorAll("[data-carousel-slide], .home-slide"));
         const prev = carousel.querySelector("[data-carousel-prev]");
         const next = carousel.querySelector("[data-carousel-next]");
         const dotsWrap = carousel.querySelector("[data-carousel-dots]");
